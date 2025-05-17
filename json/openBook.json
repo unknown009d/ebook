@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1001",
+    "title": "The Shadow in the Woods of the Lands ft. KRI$NA",
+    "author": "James Arnold",
+    "category": "TBSE",
+    "desc": "No Desc...",
+    "price": "$28.00",
+    "oldP": "",
+    "img": "resources/sampleBook.jpg"
+  },
+  {
+    "id": "1002",
+    "title": "The Forest Bin",
+    "author": "Mr. Bean Arnold",
+    "category": "Comedy",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum a dolorem sequi praesentium excepturi nam quod, placeat architecto quaerat esse facilis. Autem magnam doloribus eius praesentium? Ad, doloribus quod harum quia, maiores cupiditate error repudiandae eaque porro vitae atque expedita dicta itaque ipsum ipsam culpa neque eos sit veritatis? Culpa dignissimos ullam voluptate magnam! Quis maxime porro non explicabo rerum est adipisci, labore, modi aliquam alias quisquam minus eos architecto, molestiae assumenda iusto voluptatum deleniti deserunt ratione maiores fugit excepturi odit? Cum dolorem iure earum, et quae voluptatem consequuntur nulla aspernatur inventore deserunt pariatur quam porro, doloremque explicabo beatae ullam repellat vitae, asperiores non id dolor temporibus atque necessitatibus. Et nulla recusandae at neque, error labore repellendus. Obcaecati, commodi voluptatibus?",
+    "price": "$20.99",
+    "oldP": "$22.00",
+    "img": "resources/sampleBook.jpg"
+  },
+  {
+    "id": "1003",
+    "title": "NUMB ft.Lal Mohan",
+    "author": "Linkin Park",
+    "category": "RAP",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum a dolorem sequi praesentium excepturi nam quod, placeat architecto quaerat esse facilis. Autem magnam doloribus eius praesentium? Ad, doloribus quod harum quia, maiores cupiditate error repudiandae eaque porro vitae atque expedita dicta itaque ipsum ipsam culpa neque eos sit veritatis? Culpa dignissimos ullam voluptate magnam! Quis maxime porro non explicabo rerum est adipisci, labore, modi aliquam alias quisquam minus eos architecto, molestiae assumenda iusto voluptatum deleniti deserunt ratione maiores fugit excepturi odit? Cum dolorem iure earum, et quae voluptatem consequuntur nulla aspernatur inventore deserunt pariatur quam porro, doloremque explicabo beatae ullam repellat vitae, asperiores non id dolor temporibus atque necessitatibus. Et nulla recusandae at neque, error labore repellendus. Obcaecati, commodi voluptatibus?",
+    "price": "$28.00",
+    "oldP": "$30.00",
+    "img": "resources/sampleBook.jpg"
+  },
+  {
+    "id": "1004",
+    "title": "Database GOD",
+    "author": "Divak Saha",
+    "category": "Computer Science",
+    "desc": "The best book about Database Knowledge ...",
+    "price": "$599.99",
+    "oldP": "$650.00",
+    "img": "resources/sampleBook.jpg"
+  },
+  {
+    "id": "1005",
+    "title": "SEO ft.Raftaar",
+    "author": "Joy Dey",
+    "category": "Computer Science",
+    "desc": "This is just a sample Thing made ! SEO by Joy",
+    "price": "$69.69",
+    "oldP": "$72.00",
+    "img": "resources/sampleBook.jpg"
+  }
+]

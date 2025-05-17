@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "src": "resources/navBar.jpg",
+    "content": "GET THE LATEST OFFERS NOW"
+  },
+  {
+    "id": "2",
+    "src": "resources/navBar.jpg",
+    "content": "Advt 2"
+  },
+  {
+    "id": "3",
+    "src": "resources/navBar.jpg",
+    "content": "Advt 3"
+  },
+  {
+    "id": "4",
+    "src": "resources/navBar.jpg",
+    "content": "Advt 4"
+  },
+  {
+    "id": "5",
+    "src": "resources/navBar.jpg",
+    "content": "Advt 5"
+  },
+  {
+    "id": "6",
+    "src": "resources/navBar.jpg",
+    "content": "Advt 6"
+  }
+]

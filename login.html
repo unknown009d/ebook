@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pulk Library" />
+    <meta
+      name="keywords"
+      content="Pulk, library, agartala, books, book, ncert, cbse, icse, tbse"
+    />
+    <meta name="author" content="unknown009d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulk Library | Login</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <meta name="theme-color" content="#212325" />
+    <link
+      rel="icon"
+      href="resources/Logo/16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/48.png"
+      type="image/png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/72.png"
+      type="image/png"
+      sizes="72x72"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/96.png"
+      type="image/png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/128.png"
+      type="image/png"
+      sizes="128x128"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/256.png"
+      type="image/png"
+      sizes="256x256"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/512.png"
+      type="image/png"
+      sizes="512x512"
+    />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body class="login">
+    <section class="container fv_center jc_space loginPage">
+      <div class="logoContainer">
+        <img src="resources/Logo/512.svg" alt="Logo" />
+      </div>
+      <h2 class="">Pulk Library</h2>
+      <p class="sm-text opa5">Please Enter Your Credientials To Login !</p>
+      <br /><br />
+      <div class="g_txt wide100">
+        <input type="text" class="txt" oninput="chTxt(this)" required />
+        <p>User Name</p>
+      </div>
+      <div class="g_txt wide100">
+        <input type="password" class="txt" required />
+        <p>Password</p>
+      </div>
+      <button
+        class="btn ripple wide100"
+        onclick="window.location.href='index.html'"
+      >
+        LOGIN
+      </button>
+      <div class="links">
+        <a href="register.html">
+          <span class="opa8"> Don't Have an Account ? </span>
+          <strong class="primary-text"> Register Now ! </strong>
+        </a>
+      </div>
+    </section>
+    <script src="js/functionality.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      let chTxt = (textbox) => {
+        let regex = /^[A-Za-z .,!&#0-9-=/:()'|*?\n]*$/;
+        let value = textbox.value;
+        let result = value.match(regex);
+
+        // Cleaning the Textbox
+        textbox.value = result;
+      };
+      let chNum = (textbox) => {
+        let regex = /^[0-9 +]*$/;
+        let value = textbox.value;
+        let result = value.match(regex);
+
+        // Cleaning the Textbox
+        textbox.value = result;
+      };
+    </script>
+  </body>
+</html>

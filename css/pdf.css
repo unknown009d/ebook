@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 100px;
+}
+.bottom-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.pdfView {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdfView #pdf-render {
+  height: 100%;
+  width: 30%;
+  margin: 0 auto;
+  transition: width 0.5s ease;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+.btn {
+  border: 0;
+  color: #404040;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 40px 10px #00000010;
+  border-radius: 500px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #34a56d;
+}
+.btnWide {
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn button i {
+  color: #34a56d;
+  font-size: 1.1rem;
+}
+.page-info {
+  background-color: #ffffff;
+  color: #404040;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.remItem {
+  opacity: 0;
+  transform: translateY(80px);
+}
+.zoomIn {
+  width: 100% !important;
+}
+@media (max-width: 850px) {
+  .pdfView #pdf-render {
+    width: 50%;
+  }
+}
+@media (max-width: 520px) {
+  .pdfView #pdf-render {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .pdfView #pdf-render {
+    width: 100%;
+  }
+}

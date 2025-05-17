@@ -1,0 +1,166 @@
+.diss {
+  background-color: #e2e2e2;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+}
+@keyframes dissAni {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.dissCONT .card .image,
+.diss_img {
+  background-color: #e2e2e2;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+}
+.dissCONT .card h5,
+.diss_txt {
+  width: 120px;
+  height: 15px;
+  margin-bottom: 8px;
+  background-color: #8f8f8f;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  border-radius: 100px;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+}
+.mybooks .dissCONT .interect a {
+  width: 90%;
+  margin-top: 20px;
+}
+.mybooks .dissCONT .gText p {
+  height: 20px;
+  min-height: 15px;
+}
+.mybooks .dissCONT h5 {
+  height: 25px;
+}
+/* diss_p = Text Loading Screen */
+.dissCONT .diss_p {
+  height: 20px;
+  width: 35%;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  border-radius: 100px;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+}
+.dissCONT .card {
+  width: 100%;
+}
+.dissCONT .card .gText {
+  width: 100%;
+}
+.dissCONT .card p {
+  width: 100%;
+  height: 12px;
+  background-color: #8f8f8f;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  border-radius: 100px;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+}
+.dissCONT .card p:nth-child(2) {
+  height: 45px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.dissCONT .interect {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.dissCONT .interect .btn,
+.diss_btn {
+  height: 40px;
+  width: 42%;
+  margin: 2px;
+  margin-bottom: 10px;
+  background-color: #8f8f8f;
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  border-radius: 100px;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite;
+  border-radius: 200px;
+}
+.diss_advtBanner::after {
+  content: "";
+  display: none;
+}
+.dissCONT .advtbanner,
+.diss_advtBanner {
+  background: linear-gradient(to right, #d2d2d2, #e8e8e8);
+  background-size: 400% 400%;
+  opacity: 0.6;
+  animation: dissAni 0.6s ease infinite !important;
+}
+.moreOp {
+  float: right;
+  text-decoration: underline;
+  color: var(--primary);
+  filter: brightness(70%);
+  font-size: 12px;
+}
+.booksOpen .price {
+  font-size: 1rem !important;
+}
+.imgSlider::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.imgSlider {
+  display: grid;
+  grid-template-columns: 5% repeat(4, 80%) 5%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: scroll;
+  grid-gap: 1.2rem;
+}
+
+.imgSlider::before,
+.imgSlider::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.imgSlider .advtbanner {
+  width: 100%;
+  height: 160px;
+  user-select: none;
+  transition: transform 0.4s ease;
+}
+.noScrollbar {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (max-width: 240px) {
+  .comName {
+    font-size: 0.5rem;
+  }
+  header i {
+    font-size: 0.7rem;
+  }
+}

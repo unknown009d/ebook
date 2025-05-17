@@ -1,0 +1,61 @@
+.advtPC::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.dp {
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+.dp img {
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 400px;
+  object-position: center;
+  object-fit: cover;
+}
+.dp i {
+  font-size: 4rem;
+  background-color: #e8e8e8;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.profile {
+  width: 100%;
+  position: relative;
+}
+/* New Updates in UI */
+.g_txt > .txt:read-only + p,
+.g_txt > .txt:disabled + p {
+  transform: translate(-5pt, -15pt);
+  font-size: 10px;
+  font-weight: 600;
+  background-color: var(--theme);
+}
+.btn:disabled {
+  background-color: #d6d6d6;
+}
+.pageError {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.bookpage{
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

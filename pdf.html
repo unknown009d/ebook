@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Reader</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/pdf.css" />
+  </head>
+  <body>
+    <div class="page-info">
+      Page <span id="page-num"></span> of <span id="page-count"></span>
+    </div>
+    <div class="pdfView">
+      <canvas id="pdf-render" ondblclick="zoom()"></canvas>
+    </div>
+    <div class="bottom-bar" id="elemScroll">
+      <button class="btn" id="prev-page">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="btn" id="next-page">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <br />
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script>
+      var lastScrollTop = 0;
+      window.addEventListener("scroll", function () {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (document.getElementById("elemScroll")) {
+          if (st > lastScrollTop) {
+            document.getElementById("elemScroll").classList.add("remItem");
+          } else {
+            document.getElementById("elemScroll").classList.remove("remItem");
+          }
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+      });
+
+      let zoom = function () {
+        let elem = document.getElementById("pdf-render");
+        if (elem.className === "zoomIn") {
+          elem.classList.remove("zoomIn");
+        } else {
+          elem.classList.add("zoomIn");
+        }
+      };
+
+      let url_string = window.location.href;
+      let urlRaw = new URL(url_string);
+      let pdfUrl = urlRaw.searchParams.get("url");
+
+      const url = pdfUrl;
+    </script>
+    <script src="js/pdfMain.js"></script>
+  </body>
+</html>

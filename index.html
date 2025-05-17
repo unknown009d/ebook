@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en, la">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pulk Library" />
+    <meta
+      name="keywords"
+      content="Pulk, library, agartala, books, book, ncert, cbse, icse, tbse"
+    />
+    <meta name="author" content="unknown009d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Pulk Library App" />
+    <meta property="og:title" content="Pulk Library" />
+    <meta property="og:image" content="thumbnail.webp" />
+    <meta property="og:image:width" content="1980" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:type" content="webapp" />
+    <meta
+      property="og:description"
+      content="This is a Ebook Library Application. Where users can buy books as a EBOOK or as Physical Copy. It's more of a E-Commerce App for Library."
+    />
+    <meta property="og:url" content="http://www.mannthan.in/pulk" />
+    <title>Pulk Library</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/v.1.0.css" />
+    <link rel="stylesheet" href="css/v.1.1.css" />
+    <link rel="stylesheet" href="css/v.1.2.css" />
+    <script src="js/angularjs/angular.min.js"></script>
+    <script src="js/angularjs/angular-router.min.js"></script>
+    <script src="js/angularjs/angular-cookies.min.js"></script>
+    <meta name="theme-color" content="#212325" />
+    <link
+      rel="icon"
+      href="resources/Logo/16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/48.png"
+      type="image/png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/72.png"
+      type="image/png"
+      sizes="72x72"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/96.png"
+      type="image/png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/128.png"
+      type="image/png"
+      sizes="128x128"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/256.png"
+      type="image/png"
+      sizes="256x256"
+    />
+    <link
+      rel="icon"
+      href="resources/Logo/512.png"
+      type="image/png"
+      sizes="512x512"
+    />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body data-ng-app="ebook" class="appB">
+    <div class="mobile">
+      <header class="" id="header">
+        <div class="fh_center jc_space heroB">
+          <a class="back" id="searchBack" onclick="closeSearch()"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a class="menu" onclick="openNav()"><i class="fas fa-bars"></i></a>
+          <h3 class="comName" onclick="window.location.href = '#!/home'">
+            Pulk <span class="lightTxt">Library</span>
+          </h3>
+          <input
+            type="text"
+            list="search"
+            class="txtSearch"
+            id="txtSearch"
+            autocomplete="off"
+          />
+          <datalist id="search">
+            <option value="The Leap of Faith">by KRI$NA</option>
+            <option value="Gauntlet 2.0">by RAP DEAMON</option>
+            <option value="BROTHERHOOD">by UBISOFT</option>
+            <option value="Let Me Fly">by Uranta Basu</option>
+          </datalist>
+        </div>
+        <nav>
+          <a onclick="openSearch()" id="btnSearch"
+            ><i class="fas fa-search"></i
+          ></a>
+          <a
+            ><i
+              class="fas fa-shopping-cart"
+              id="cartFull"
+              onclick="openCart()"
+            ></i
+          ></a>
+        </nav>
+      </header>
+      <section class="sideNav" id="navBar">
+        <div class="mainMenu">
+          <div class="profile">
+            <img src="resources/navBar.jpg" alt="Logo" />
+          </div>
+          <div class="navMenu">
+            <p class="dripple" onclick="reDirect('home');closeNAV()">
+              <i class="fas fa-home"></i> Home
+            </p>
+            <p class="dripple" onclick="reDirect('profile');closeNAV()">
+              <i class="fas fa-edit"></i> Edit Profile
+            </p>
+            <p class="dripple" onclick="openMyBooks();closeNAV()">
+              <i class="fas fa-book-open"></i> My Books
+            </p>
+            <p
+              class="dripple"
+              onclick="shMsg(`<p class='sm-text'>Feature not Available <br /> Right Now !</p>`)"
+            >
+              <i class="fas fa-file-invoice-dollar"></i> Purchases
+            </p>
+            <p class="dripple" onclick="reDirect('about');closeNAV()">
+              <i class="fab fa-artstation"></i> ABOUT
+              <span style="color: #35448e; font-weight: 800;"> Pulk</span>
+            </p>
+            <p class="dripple logout datalink" data-relocate="login.html">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </p>
+          </div>
+          <div class="foo">
+            <p>Developed By</p>
+            <p
+              class="d_name"
+              style="cursor: pointer;"
+              onclick="window.open('https://unknown009d.github.io', '_blank')"
+            >
+              unknown009d
+            </p>
+          </div>
+        </div>
+        <div id="close_nav"></div>
+      </section>
+      <div class="overNO" data-ng-view></div>
+      <div class="messageBox" id="messageBox">
+        <div class="contentM" id="msgOut">
+          <h3 class="alert">Your Are Not Allowed To Do this !</h3>
+        </div>
+        <div class="backClose" onclick="remMsg('messageBox')"></div>
+      </div>
+      <div class="messageBox" id="loading">
+        <div class="contentM">
+          <p class="sm-text opa10">Loading Please Wait...</p>
+        </div>
+        <div class="backClose"></div>
+      </div>
+      <div class="messageBox" id="installedEvent">
+        <div class="contentM">
+          <p class="sm-text opa6" style="margin-bottom: 5px;">
+            Install the App For Better Experience
+          </p>
+          <strong class="sm-text opa8">Do you want to Install the App ?</strong>
+          <span class="fh_center msgInterect wide100">
+            <button
+              class="btn bsimple dripple opa6"
+              onclick="neverShow();remMsg('installedEvent')"
+            >
+              NO
+            </button>
+            <button class="btn bsimple ripple" onclick="addToHome()">
+              INSTALL NOW
+            </button>
+          </span>
+        </div>
+        <div class="backClose" onclick="remMsg('installedEvent')"></div>
+      </div>
+    </div>
+    <div class="advtPC">
+      <h1>Pulk Library</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, odit
+        dolores eaque alias consequatur id error nesciunt similique, quam ipsam
+        nulla repudiandae recusandae iusto.
+        <br /><br />
+        Vero hic harum ut, incidunt fugiat reprehenderit sapiente consequuntur
+        esse. Vero voluptatibus eius asperiores pariatur sed!
+      </p>
+      <span class="fh_center mtb">
+        <button
+          class="btn dripple"
+          style="background-color: #fff; color: #404040; padding: 10px 20px;"
+        >
+          Learn More
+        </button>
+        <button
+          class="btn ripple"
+          style="
+            margin-left: 10px;
+            background-color: transparent;
+            box-shadow: inset 0px 0px 0px 2px #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+          "
+        >
+          Visit Website
+        </button>
+      </span>
+    </div>
+    <link itemprop="thumbnailUrl" href="OG_300.webp" />
+    <span
+      itemprop="thumbnail"
+      itemscope
+      itemtype="http://schema.org/ImageObject"
+    >
+      <link itemprop="url" href="OG_300.webp" />
+      <meta itemprop="width" content="300" />
+      <meta itemprop="height" content="300" />
+    </span>
+    <script></script>
+    <script src="js/functionality.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
